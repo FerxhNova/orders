@@ -10,6 +10,7 @@ app.get("*", (req, res) => {
 
 app.post("/orders", (req, res) => {
   const requestBody = req.body;
+  console.log(requestBody);
   res.json(requestBody);
 });
 
